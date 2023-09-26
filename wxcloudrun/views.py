@@ -38,7 +38,7 @@ def counter(request, _):
     return rsp
 
 
-def query(request, _):
+def query():
     return JsonResponse({'code': 0, "name": '王浩德'},
                         json_dumps_params={'ensure_ascii': False})
 
