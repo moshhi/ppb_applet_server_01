@@ -38,11 +38,6 @@ def counter(request, _):
     return rsp
 
 
-def query(request, _):
-    return JsonResponse({'code': 0, 'name': '王浩德'},
-                        json_dumps_params={'ensure_ascii': False})
-
-
 def get_count():
     """
     获取当前计数
